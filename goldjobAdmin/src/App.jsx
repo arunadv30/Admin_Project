@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Cards from "./component/cards/Cards";
+import SearchBarDropdown from "./component/search/SearchBarDropdown";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -36,8 +37,16 @@ function App() {
 
         <main class="flex-1 p-6">
           <h1 class="text-2xl font-bold">Main Content</h1>
-          <p class="mt-4">This is the main content area.</p>
+          <p class="mt-4 mb-4">This is the main content area.</p>
+          <SearchBarDropdown />
+         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <Cards/>
+          <Cards/>
+          <Cards/>
+          <Cards/>
+          <Cards/>
+          <Cards/>
+         </div>
         </main>
       </div>
     </>
